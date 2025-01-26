@@ -1,10 +1,14 @@
 import React from "react";
+import Sidebar from "./components/Sidebar";
+import ProjectForm from "./components/ProjectForm";
+import NoProjectSelected from "./components/NoProjectSelected";
 
 function App() {
   return (
-    <>
-    <h1 className="">Project management</h1>
-    </>
+    <main className="h-screen my-8 flex gap-8">
+      <Sidebar />
+      <NoProjectSelected />
+    </main>
   )
 }
 
