@@ -1,8 +1,10 @@
 import React from 'react';
 
 interface propTypes {
-    label: string,
-    textarea: HTMLTextAreaElement
+  type?: 'text' | 'date'
+  label: string
+  textarea?: boolean
+  placeholder?: string
 }
 
 const Input: React.FC<propTypes> = ({ label, textarea, ...props }) => {
